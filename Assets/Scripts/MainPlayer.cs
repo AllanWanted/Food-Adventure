@@ -9,12 +9,25 @@
         public float speed = 5;
         Rigidbody rig;
 
+        //Sounds
+        AudioSource Audio;
+        public AudioClip eatSound;
 
-        // Start is called before the first frame update
-        void Start()
+        AudioSource Audios;
+        public AudioClip damageSound;
+
+        AudioSource Audiox;
+        public AudioClip healtSound;
+        
+
+    // Start is called before the first frame update
+    void Start()
         {
             rig = GetComponent<Rigidbody>();
-        }
+            Audio = gameObject.GetComponent<AudioSource>();
+            Audios = gameObject.GetComponent<AudioSource>();
+            Audiox = gameObject.GetComponent<AudioSource>();
+    }
 
         // Update is called once per frame
         void Update()
@@ -30,15 +43,15 @@
     {
         if (collision.gameObject.CompareTag("Pared"))
         {
-            Debug.Log("Chocando");
+            Audios.PlayOneShot(damageSound);
         }
         else if (collision.gameObject.CompareTag("Chatarra"))
         {
-            Debug.Log("Punto");
+            Audio.PlayOneShot(eatSound);
         }
         else if (collision.gameObject.CompareTag("Saludable"))
         {
-            Debug.Log("Ouch");
+            Audiox.PlayOneShot(healtSound);
         }
     }
 }
