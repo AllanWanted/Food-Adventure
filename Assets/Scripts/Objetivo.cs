@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Objetivo : MonoBehaviour
 {
-    
-      
+    public AudioSource quienEmite;
+    public AudioClip elSonido;
+    public float volumen = 1f;
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
-        {
-          Destroy(gameObject);
-        }
+            {
+                quienEmite.PlayOneShot(elSonido, volumen);
+                Destroy(gameObject, 1f);
+
+            }
     }
 }
