@@ -9,8 +9,7 @@ public class Player : MonoBehaviour
 
     public float speed = 10f;
 
-    public GameObject canvas1;
-    public Text txtplayer1;
+   
 
     void Start()
     {
@@ -34,19 +33,8 @@ public class Player : MonoBehaviour
     {
         Debug.Log("comenzo la colision!");
 
-        
+
     }
-
-    private void OnTriggerEnter(Collider player1)
-    {
-        if (player1.name == "triggermeta")
-        {
-            canvas1.SetActive(true);
-            txtplayer1.text = "Ganaste";
-        }
-    }
-
-
 
     /*private void OnCollisionStay(Collision collision)
     {
