@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class Meta : MonoBehaviour
 {
-    public GameObject canvas;
-    public Text txtplayer;
+    public GameObject canvas1;
+    public Text txtplayer1;
 
-    private void OnTriggerEnter(Collider player)
+    private void OnTriggerEnter(Collider player1)
     {
-        if (player.name == "triggermeta")
+        if (player1.name == "triggermeta")
         {
-            canvas.SetActive(true);
-            txtplayer.text = "Ganaste";
+            canvas1.SetActive(true);
+            txtplayer1.text = "Ganaste";
         }
     }
 }

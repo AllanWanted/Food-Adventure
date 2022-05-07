@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     private new Rigidbody rigidbody;
 
     public float speed = 10f;
+
+    public GameObject canvas1;
+    public Text txtplayer1;
 
     void Start()
     {
@@ -29,9 +33,22 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("comenzo la colision!");
+
+        
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnTriggerEnter(Collider player1)
+    {
+        if (player1.name == "triggermeta")
+        {
+            canvas1.SetActive(true);
+            txtplayer1.text = "Ganaste";
+        }
+    }
+
+
+
+    /*private void OnCollisionStay(Collision collision)
     {
         Debug.Log("Estamos Colisionando!");
     }
@@ -39,5 +56,5 @@ public class Player : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         Debug.Log("termino la colision!");
-    }
+    }*/
 }
