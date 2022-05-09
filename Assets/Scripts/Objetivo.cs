@@ -13,7 +13,7 @@ public class Objetivo : MonoBehaviour
         if(other.tag == "Player")
             {
                 quienEmite.PlayOneShot(elSonido, volumen);
-                Destroy(gameObject, 1f);
+                Destroy(gameObject);
 
             }
     }
