@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     private new Rigidbody rigidbody;
 
     public float speed = 10f;
+
+   
 
     void Start()
     {
@@ -29,9 +32,11 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("comenzo la colision!");
+
+
     }
 
-    private void OnCollisionStay(Collision collision)
+    /*private void OnCollisionStay(Collision collision)
     {
         Debug.Log("Estamos Colisionando!");
     }
@@ -39,5 +44,5 @@ public class Player : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         Debug.Log("termino la colision!");
-    }
+    }*/
 }
