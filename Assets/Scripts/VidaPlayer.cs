@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class VidaPlayer : MonoBehaviour
 {
     public float vida = 100;
+    
 
     public Image barraDeVida;
 
@@ -15,6 +16,18 @@ public class VidaPlayer : MonoBehaviour
 
         barraDeVida.fillAmount = vida / 100;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Chatarra")
+        {
+
+        }
+    }
+
+    
+
+
 
    
 }
