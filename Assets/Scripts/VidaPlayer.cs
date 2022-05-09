@@ -6,23 +6,29 @@ using UnityEngine.UI;
 public class VidaPlayer : MonoBehaviour
 {
     public float vida = 100;
-    
+    public BarraDeVida barraDeVida;
 
-    public Image barraDeVida;
+
+    
+    
 
     void Update()
     {
-        vida = Mathf.Clamp(vida, 0, 100);
-
-        barraDeVida.fillAmount = vida / 100;
+        
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void HitSaludable()
     {
-        if(other.tag == "Chatarra")
+        vida = vida - 10;
+        barraDeVida.vidaActual = vida;
+        if(vida <= 0)
         {
 
         }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        //if (collision.gameObject.CompareTag("")) ;
     }
 
     
