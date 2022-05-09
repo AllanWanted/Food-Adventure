@@ -16,5 +16,9 @@ public class Meta : MonoBehaviour
             canvas1.SetActive(true);
             txtplayer.text = "Ganaste";
         }
+
+        
     }
+
+    
 }
