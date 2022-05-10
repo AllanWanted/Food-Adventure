@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 3277293632523070964}
   - component: {fileID: 3277293632523070963}
   - component: {fileID: 3277293632523070962}
+  - component: {fileID: 1917776903380099886}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Saludable
@@ -193,6 +194,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1917776903380099886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3277293632523070961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f9c5ed7106d504baa76abb59158249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7971558756523811964
 GameObject:
   m_ObjectHideFlags: 0
