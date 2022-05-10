@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4074699824918067516}
   - component: {fileID: 4074699824918067519}
   - component: {fileID: 4074699824918067507}
+  - component: {fileID: 583463898388761728}
   m_Layer: 0
   m_Name: Cucumber
   m_TagString: Saludable
@@ -112,3 +113,15 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &583463898388761728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4074699824918067518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f9c5ed7106d504baa76abb59158249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
